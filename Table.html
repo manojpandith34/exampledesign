@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style2.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="nameblock">
+            <label>NO OF PAGES:</label>
+            <input type="text" id="pagesno">
+        </div>
+        <div id="buttonframe">
+            <button type="button" id="button1">Add</a>
+        </div>
+        <br>
+        <br>
+        <div class="popupframe">
+            <div id="popupcontent">
+                <label>Enter Page No:</label>
+                <input type="number" id="pagenumber">
+                <span id="pagenumbererror"></span>
+                <br>
+                <br>
+                <label>Enter the description:</label>
+                <textarea id="description" rows="4" cols="20"></textarea>
+                <span id="pagedescriptionerror"></span>
+                <br>
+                <br>
+                <button type="button" id="button2">Close</button>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <div class="active" id="overlay"></div>
+    <script src="tablevalidation.js"></script>
+</body>
+
+</html>

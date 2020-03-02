@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="snapwizard.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <div class="HomeContainer">
+        <div class="nav">
+            <div class="anchor1">
+                <a id="step1" class="anchor-content1" style="text-decoration: none;" href="#form">STEP1</a>
+                <div class="arrow1">
+                </div>
+            </div>
+            <div class="anchor2">
+                <a id="step2" class="anchor-content2" style="text-decoration: none;" href="#second-page">STEP2</a>
+                <div class="arrow2">
+                </div>
+            </div>
+            <div class="anchor3">
+                <a id="step3" class="anchor-content3" style="text-decoration: none;" href="#frame">STEP3</a>
+                <div class="arrow3">
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <form>
+                <h1 style="text-align: center;">ORGANIZATION DETAILS</h1>
+                <label style="font-size: 30px;">Organize name: </label>
+                <input type="text" name="organizeNname" id="Oname">
+                <span class="sideerr" id="orgnameerr"></span>
+                <br>
+                <br>
+                <label style="font-size: 30px;">Organize Category:</label>
+                <select id="Ocategory">
+                    <option>CEO</option>
+                    <option>MANAGER</option>
+                    <option>HR</option>
+                    <option>STAFF</option>
+                </select>
+                <br>
+                <br>
+                <label style="font-size: 30px;">Organize descrption: </label>
+                <input type="text" name="organizedescription" id="Odescription">
+                <span class="sideerr" id="orgdescriptionerr"></span>
+                <br>
+                <br>
+                <br>
+                <label Style="font-size: 30px;">Upload Logo:</label>
+                <div id="imgholder">
+                    <img src="" id="logoimage" width="200px" height="100px">
+                </div>
+                <br>
+                <input type="file" id="filechoose" />
+            </form>
+        </div>
+        <div id="second-page">
+            <div id="button1">
+                <button id="myBtn">Open Modal</button>
+            </div>
+
+            <div id="tableframe">
+                <table id="usertable">
+                    <tbody id="mytable">
+                        <tr>
+                            <th>PAGE NO</th>
+                            <th>PAGE DESCRIPTION</th>
+                            <th>CONTEX</th>
+                        </tr>
+                        <template>
+                            <tr id="insert-row">
+                                <td>aaa</td>
+                                <td>aaaa</td>
+                                <td>
+                                    <button id="editBtn1">EDIT</button>
+                                    <input type="button" value="DELETE" onclick="deleteRow()">
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+
+                </table>
+            </div>
+
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div id="page">
+                        <label>Enter Page No:</label>
+                        <input type="number" id="pagenumber" class="pNum">
+                        <span id="pagenumbererror" style="color: red;"></span>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="text">
+                        <label>Enter description:</label>
+                        <textarea id="pagetext" rows="4" cols="30" class="pt"></textarea>
+                        <span id="pagedescriptionerror" style="color: red;"></span>
+                    </div>
+                    <div><span class="close">&times;</span></div>
+                    <div id="submitbutton">
+                        <button type="button" id="submitButton" onclick="sumbitfunction()">submit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <template id="mytabletemplaterow">
+
+                <tr>
+                    <td class="nr" id="pn"></td>
+                    <td class="texttabledata" id="pd"></td>
+                    <td>
+
+                        <input type="button" value="EDIT" onclick="editRow(this)" />
+                        <input type="button" value="DELETE" onclick="deleteRow(this)" />
+                    </td>
+                </tr>
+
+            </template>
+        </div>
+
+        <div id="frame">
+            <div class="galleryrow1">
+                <div class="imageHolderbox1">
+                    <img src="naturebird.jpg" width="100%" height="250px">
+                </div>
+                <div class="imageHolderbox2">
+                    <img src="trees.jpg" width="100%" height="250px">
+                </div>
+                <div class="imageHolderbox3">
+                    <img src="flower.jpg" width="100%" height="250px">
+                </div>
+                <div class="imageHolderbox4">
+                    <img src="cascade.jpg" width="100%" height="250px">
+                </div>
+            </div>
+            <div class="galleryrow2">
+                <div class="imageHolderbox5">
+                    <img src="beach.jpg" width="100%" height="250px">
+                </div>
+                <div class="imageHolderbox6">
+                    <img src="naturebird.jpg" width="100%" height="250px">
+                </div>
+                <div class="imageHolderbox7">
+                    <img src="water.jpg" width="100%" height="250px">
+                </div>
+                <div class="imageHolderbox8">
+                    <img src="trees.jpg" width="100%" height="250px">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="Externalnav">
+            <ul>
+                <li><a id="prev" href="#form">PREV</a></li>
+                <li><a id="next" href="#second-page">NEXT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="snapwizardvalidation.js"></script>
+</body>
+
+</html>

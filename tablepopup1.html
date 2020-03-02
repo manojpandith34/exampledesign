@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style3.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <div id="button">
+        <button id="myBtn">Open Modal</button>
+    </div>
+
+    <div id="frame">
+        <div id="tableframe">
+
+            <table id="mytable">
+                <tr>
+                    <th>PAGE NO</th>
+                    <th>PAGE DESCRIPTION</th>
+                    <th>CONTEX</th>
+                </tr>
+            </table>>
+
+
+
+
+
+            <!-- <div id="templateframe">
+                <template id="template">
+                    <table id="mytable">
+                        <th>PAGE NO</th>
+                        <th>PAGE text</th>
+                        <th>PAGE des</th>
+
+                        <tr>
+                            <td width="20%" height="30px"></td>
+                            <td width="50%" height="30px"></td>
+                            <td>
+                                <button id="button1" type="button">ADD</button>
+                                <button id="button2" type="button">DELETE</button>
+                            </td>
+                        </tr>
+
+                    </table>
+                </template>
+            </div>
+            --->
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="page">
+                <label>Enter Page No:</label>
+                <input type="number" id="pagenumber">
+            </div>
+            <br>
+            <br>
+            <div id="text">
+                <label>Enter description:</label>
+                <textarea id="pagetext" rows="4" cols="30"></textarea>
+            </div>
+            <span class="close">&times;</span>
+            <div id="button">
+                <button type="button" onclick="myfunction()">submit</button> </div>
+        </div>
+    </div>
+    <div class="template">
+        <template>
+            <tr id="templaterow">
+                <td id="numberrow"></td>
+                <td id="textrow"></td>
+                <td>
+                    <button id="button1" type="button">ADD</button>
+                    <button id="button2" type="button">DELETE</button>
+                </td>
+            </tr>
+        </template>
+    </div>
+
+    <script src="table1validation.js"></script>
+</body>
+
+</html>

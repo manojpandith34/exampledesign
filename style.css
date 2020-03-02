@@ -1,0 +1,133 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame {
+    width: 74%;
+    height: 650px;
+    border: 1px solid black;
+    flex-direction: row;
+}
+
+#nav {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: dimgray;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    padding: 14px 67px;
+    font-size: 30px;
+    color: white;
+}
+
+li a:hover {
+    background-color: lime;
+}
+
+#Externalnav {
+    width: 20%;
+    height: 6%;
+    position: absolute;
+    right: 212px;
+    top: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+}
+
+#Externalnav ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+#Externalnav li {
+    list-style: none;
+    display: inline;
+}
+
+#Externalnav li a {
+    text-decoration: none;
+    padding: 13px 50px;
+    font-size: 22px;
+    color: white;
+}
+
+li a:hover {
+    background-color: yellowgreen;
+}
+
+#form {
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 173px;
+    border: 1px solid black;
+    box-shadow: 8px 7px dimgrey;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+#contentBox {
+    width: 20%;
+    height: 20%;
+    border: 2px solid black;
+    margin-top: 3px;
+}
+
+#Odescription {
+    width: 40%;
+    height: 100px;
+}
+
+#imgholder {
+    float: right;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin-right: 53%;
+}
+
+#filechoose {
+    width: 196px;
+    height: 40px;
+    margin-left: 205px;
+    margin-top: 20px;
+}

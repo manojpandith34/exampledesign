@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="frame">
+            <div id="nav">
+                <ul>
+                    <li><a href="Home.html">STEP1</a></li>
+                    <li><a href="tablepopup.html">STEP2</a></li>
+                    <li><a href="gallery.html">STEP3</a></li>
+                </ul>
+            </div>
+            <div id="form">
+                <form>
+                    <h1 style="text-align: center;">ORGANIZATION DETAILS</h1>
+                    <label style="font-size: 30px;">Organize name: </label>
+                    <input type="text" name="organizeNname" id="Oname">
+                    <span class="sideerr" id="orgnameerr"></span>
+                    <br>
+                    <br>
+                    <label style="font-size: 30px;">Organize Category:</label>
+                    <select id="Ocategory">
+                        <option>CEO</option>
+                        <option>MANAGER</option>
+                        <option>HR</option>
+                        <option>STAFF</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label style="font-size: 30px;">Organize descrption: </label>
+                    <input type="text" name="organizedescription" id="Odescription">
+                    <span class="sideerr" id="orgdescriptionerr"></span>
+                    <br>
+                    <br>
+                    <br>
+                    <label Style="font-size: 30px;">Upload Logo:</label>
+                    <div id="imgholder">
+                        <img src="" id="logoimage" width="200px" height="100px">
+                    </div>
+                    <input type="file" id="filechoose" />
+                </form>
+            </div> <br>
+            <div id="Externalnav">
+                <ul>
+                    <li><a href="Home.html">PREV</a></li>
+                    <li><a href="tablepopup.html">NEXT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="homevalidation.js"></script>
+</body>
+
+</html>
